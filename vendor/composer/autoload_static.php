@@ -124,11 +124,13 @@ class ComposerStaticInit2708e7798b9f81f1e1d9b48c0c063bfb
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\DBAL\\' => 14,
             'Doctrine\\Common\\Inflector\\' => 26,
+            'Doctrine\\Common\\DataFixtures\\' => 29,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'Doctrine\\Bundle\\MigrationsBundle\\' => 33,
+            'Doctrine\\Bundle\\FixturesBundle\\' => 31,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
@@ -143,8 +145,8 @@ class ComposerStaticInit2708e7798b9f81f1e1d9b48c0c063bfb
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Zend\\EventManager\\' => 
         array (
@@ -454,6 +456,10 @@ class ComposerStaticInit2708e7798b9f81f1e1d9b48c0c063bfb
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
+        'Doctrine\\Common\\DataFixtures\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures',
+        ),
         'Doctrine\\Common\\Collections\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
@@ -468,14 +474,18 @@ class ComposerStaticInit2708e7798b9f81f1e1d9b48c0c063bfb
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
-            3 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+            3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-migrations-bundle',
+        ),
+        'Doctrine\\Bundle\\FixturesBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/doctrine-fixtures-bundle',
         ),
         'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
         array (
