@@ -50,19 +50,27 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
+        <!-- Custom fonts for this template-->
+        <link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">
+        <link href=\"https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i\" rel=\"stylesheet\">
+
+        <!-- Custom styles for this template-->
+        <link href=\"css/sb-admin-2.min.css\" rel=\"stylesheet\">
         ";
-        // line 6
+        // line 12
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
+        // line 13
         echo "    </head>
-    <body>
+    <body id=\"page-top\">
         ";
-        // line 9
+        // line 15
         $this->displayBlock('body', $context, $blocks);
-        // line 10
-        echo "        ";
+        // line 16
+        echo "
+        ";
+        // line 17
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 11
+        // line 37
         echo "    </body>
 </html>
 ";
@@ -83,7 +91,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Welcome!";
+        echo "Bienvenido";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -92,7 +100,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     }
 
-    // line 6
+    // line 12
     public function block_stylesheets($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -109,7 +117,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     }
 
-    // line 9
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -126,7 +134,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     }
 
-    // line 10
+    // line 17
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -135,6 +143,26 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
+        // line 18
+        echo "
+         <!-- Bootstrap core JavaScript-->
+        <script src=\"vendor/jquery/jquery.min.js\"></script>
+        <script src=\"vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src=\"vendor/jquery-easing/jquery.easing.min.js\"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src=\"js/sb-admin-2.min.js\"></script>
+
+        <!-- Page level plugins -->
+        <script src=\"vendor/chart.js/Chart.min.js\"></script>
+
+        <!-- Page level custom scripts -->
+        <script src=\"js/demo/chart-area-demo.js\"></script>
+        <script src=\"js/demo/chart-pie-demo.js\"></script>
+
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -150,7 +178,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     public function getDebugInfo()
     {
-        return array (  130 => 10,  113 => 9,  96 => 6,  78 => 5,  66 => 11,  63 => 10,  61 => 9,  57 => 7,  55 => 6,  51 => 5,  45 => 1,);
+        return array (  147 => 18,  138 => 17,  121 => 15,  104 => 12,  86 => 5,  74 => 37,  72 => 17,  69 => 16,  67 => 15,  63 => 13,  61 => 12,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -159,12 +187,38 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 <html>
     <head>
         <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Bienvenido{% endblock %}</title>
+        <!-- Custom fonts for this template-->
+        <link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">
+        <link href=\"https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i\" rel=\"stylesheet\">
+
+        <!-- Custom styles for this template-->
+        <link href=\"css/sb-admin-2.min.css\" rel=\"stylesheet\">
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
+    <body id=\"page-top\">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        {% block javascripts %}
+
+         <!-- Bootstrap core JavaScript-->
+        <script src=\"vendor/jquery/jquery.min.js\"></script>
+        <script src=\"vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src=\"vendor/jquery-easing/jquery.easing.min.js\"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src=\"js/sb-admin-2.min.js\"></script>
+
+        <!-- Page level plugins -->
+        <script src=\"vendor/chart.js/Chart.min.js\"></script>
+
+        <!-- Page level custom scripts -->
+        <script src=\"js/demo/chart-area-demo.js\"></script>
+        <script src=\"js/demo/chart-pie-demo.js\"></script>
+
+        {% endblock %}
     </body>
 </html>
 ", "base.html.twig", "/srv/http/symfony/adminTEP/templates/base.html.twig");

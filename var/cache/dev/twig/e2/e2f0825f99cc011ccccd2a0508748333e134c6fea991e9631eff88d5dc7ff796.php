@@ -82,16 +82,13 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
 
         // line 6
         echo "
-    <form action=\"";
-        // line 7
+    <div class=\"text-center\">
+        <h1 class=\"h4 text-gray-900 mb-4\">Welcome Back!</h1>
+    </div>
+    <form class=\"user\" action=\"";
+        // line 10
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
-        echo "\" method=\"POST\" class=\"form-signin text-center\">
-        <h1 class=\"mb-4\">Login</h1>
-        <img class=\"mb-4\" src=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/user.svg"), "html", null, true);
-        echo "\" alt=\"\" width=\"72\" height=\"72\">
-        
+        echo "\" method=\"POST\">
         ";
         // line 11
         if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 11, $this->source); })())) {
@@ -105,14 +102,39 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
         ";
         }
         // line 16
-        echo "    
-        <input class=\"form-control form-control-lg\"  type=\"text\" name=\"_username\" value=\"";
+        echo "        <div class=\"form-group\">
+            <input type=\"text\" name=\"_username\" value=\"";
         // line 17
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 17, $this->source); })()), "html", null, true);
-        echo "\" placeholder=\"Usuario\">
-        <input class=\"form-control form-control-lg\" type=\"password\" name=\"_password\"  placeholder=\"*****\">
-        <button class=\"btn btn-lg btn-primary btn-block mt-4\" type=\"submit\">Acceder</button>
-    </form> 
+        echo "\" class=\"form-control form-control-user\" id=\"exampleInputEmail\" aria-describedby=\"emailHelp\" placeholder=\"Enter Email Address...\">
+        </div>
+        <div class=\"form-group\">
+            <input type=\"password\" name=\"_password\"  class=\"form-control form-control-user\" id=\"exampleInputPassword\" placeholder=\"*******\">
+        </div>
+        <div class=\"form-group\">
+            <div class=\"custom-control custom-checkbox small\">
+                <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck\">
+                <label class=\"custom-control-label\" for=\"customCheck\">Remember Me</label>
+            </div>
+        </div>
+        <button type=\"submit\" class=\"btn btn-primary btn-user btn-block\">
+            Login
+        </button>
+        <hr>
+        <a href=\"index.html\" class=\"btn btn-google btn-user btn-block\">
+            <i class=\"fab fa-google fa-fw\"></i> Login with Google
+        </a>
+        <a href=\"index.html\" class=\"btn btn-facebook btn-user btn-block\">
+            <i class=\"fab fa-facebook-f fa-fw\"></i> Login with Facebook
+        </a>
+    </form>
+    <hr>
+    <div class=\"text-center\">
+        <a class=\"small\" href=\"forgot-password.html\">Forgot Password?</a>
+    </div>
+    <div class=\"text-center\">
+        <a class=\"small\" href=\"register.html\">Create an Account!</a>
+    </div>
 
 ";
         
@@ -135,7 +157,7 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
 
     public function getDebugInfo()
     {
-        return array (  111 => 17,  108 => 16,  102 => 13,  99 => 12,  97 => 11,  92 => 9,  87 => 7,  84 => 6,  75 => 5,  57 => 3,  35 => 1,);
+        return array (  108 => 17,  105 => 16,  99 => 13,  96 => 12,  94 => 11,  90 => 10,  84 => 6,  75 => 5,  57 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -146,20 +168,45 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
 
 {% block body %}
 
-    <form action=\"{{ path('login') }}\" method=\"POST\" class=\"form-signin text-center\">
-        <h1 class=\"mb-4\">Login</h1>
-        <img class=\"mb-4\" src=\"{{ asset('img/user.svg') }}\" alt=\"\" width=\"72\" height=\"72\">
-        
+    <div class=\"text-center\">
+        <h1 class=\"h4 text-gray-900 mb-4\">Welcome Back!</h1>
+    </div>
+    <form class=\"user\" action=\"{{ path('login') }}\" method=\"POST\">
         {% if error %}
             <div class=\"alert alert-danger\" role=\"alert\">
                 {{ error.messageKey|trans(error.messageData, 'security') }}
             </div>
         {% endif %}
-    
-        <input class=\"form-control form-control-lg\"  type=\"text\" name=\"_username\" value=\"{{ last_username}}\" placeholder=\"Usuario\">
-        <input class=\"form-control form-control-lg\" type=\"password\" name=\"_password\"  placeholder=\"*****\">
-        <button class=\"btn btn-lg btn-primary btn-block mt-4\" type=\"submit\">Acceder</button>
-    </form> 
+        <div class=\"form-group\">
+            <input type=\"text\" name=\"_username\" value=\"{{ last_username}}\" class=\"form-control form-control-user\" id=\"exampleInputEmail\" aria-describedby=\"emailHelp\" placeholder=\"Enter Email Address...\">
+        </div>
+        <div class=\"form-group\">
+            <input type=\"password\" name=\"_password\"  class=\"form-control form-control-user\" id=\"exampleInputPassword\" placeholder=\"*******\">
+        </div>
+        <div class=\"form-group\">
+            <div class=\"custom-control custom-checkbox small\">
+                <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck\">
+                <label class=\"custom-control-label\" for=\"customCheck\">Remember Me</label>
+            </div>
+        </div>
+        <button type=\"submit\" class=\"btn btn-primary btn-user btn-block\">
+            Login
+        </button>
+        <hr>
+        <a href=\"index.html\" class=\"btn btn-google btn-user btn-block\">
+            <i class=\"fab fa-google fa-fw\"></i> Login with Google
+        </a>
+        <a href=\"index.html\" class=\"btn btn-facebook btn-user btn-block\">
+            <i class=\"fab fa-facebook-f fa-fw\"></i> Login with Facebook
+        </a>
+    </form>
+    <hr>
+    <div class=\"text-center\">
+        <a class=\"small\" href=\"forgot-password.html\">Forgot Password?</a>
+    </div>
+    <div class=\"text-center\">
+        <a class=\"small\" href=\"register.html\">Create an Account!</a>
+    </div>
 
 {% endblock %}
 ", "security/login.html.twig", "/srv/http/symfony/adminTEP/templates/security/login.html.twig");

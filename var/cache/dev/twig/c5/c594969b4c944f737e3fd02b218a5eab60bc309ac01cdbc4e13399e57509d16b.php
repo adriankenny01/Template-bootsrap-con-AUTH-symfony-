@@ -54,31 +54,62 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 7
-        echo "        <link rel=\"stylesheet\" href=\"/css/cosmo/bootstrap.min.css\">
-        <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.2/css/all.css\" integrity=\"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr\" crossorigin=\"anonymous\">
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/r-2.2.2/datatables.min.css\"/>
-        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css\" />
-        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css\" media='print'/>
-        <link rel=\"stylesheet\" href=\"/css/login.css\"/>
+        echo "        <!-- Custom fonts for this template-->
+        <link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">
+        <link href=\"https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i\" rel=\"stylesheet\">
+
+        <!-- Custom styles for this template-->
+        <link href=\"css/sb-admin-2.min.css\" rel=\"stylesheet\">
+
     </head>
-    <body>
+    <body class=\"bg-gradient-primary\">
         <div class=\"container\">
+            <!-- Outer Row -->
+            <div class=\"row justify-content-center\">
+
+                <div class=\"col-xl-10 col-lg-12 col-md-9\">
+
+                    <div class=\"card o-hidden border-0 shadow-lg my-5\">
+                        <div class=\"card-body p-0\">
+                            <!-- Nested Row within Card Body -->
+                            <div class=\"row\">
+                                <div class=\"col-lg-6 d-none d-lg-block bg-password-image\"></div>
+                                    <div class=\"col-lg-6\">
+                                        <div class=\"p-5\">
+                    
+        
+
+
+
             ";
-        // line 16
+        // line 34
         $this->displayBlock('body', $context, $blocks);
-        // line 17
-        echo "        </div>
+        // line 35
+        echo "                                        </div> <!-- p-5 -->
+                                    </div> <!-- col -->
+                            </div> <!-- Nested Row within Card Body -->
+                        </div>  <!-- Card body -->
+                    </div> <!-- Card -->
+                </div> <!-- Col -->
+            </div> <!-- Outer Row -->
+        </div>
         ";
-        // line 19
-        echo "        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
-        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js\" integrity=\"sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp\" crossorigin=\"anonymous\"></script>
-        <script type=\"text/javascript\" src=\"https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/r-2.2.2/datatables.min.js\"></script>
-        <script src=\"/js/dt-table.js\"></script>
+        // line 44
+        echo "
+        <!-- Bootstrap core JavaScript-->
+        <script src=\"vendor/jquery/jquery.min.js\"></script>
+        <script src=\"vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src=\"vendor/jquery-easing/jquery.easing.min.js\"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src=\"js/sb-admin-2.min.js\"></script>
+
         ";
-        // line 24
+        // line 55
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 31
+        // line 62
         echo "    </body>
 </html>
 ";
@@ -125,7 +156,7 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
 
     }
 
-    // line 16
+    // line 34
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -142,7 +173,7 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
 
     }
 
-    // line 24
+    // line 55
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -151,10 +182,10 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 25
+        // line 56
         echo "            <script>
                 ";
-        // line 29
+        // line 60
         echo "            </script>    
         ";
         
@@ -172,7 +203,7 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
 
     public function getDebugInfo()
     {
-        return array (  158 => 29,  155 => 25,  146 => 24,  129 => 16,  112 => 6,  94 => 5,  82 => 31,  80 => 24,  73 => 19,  70 => 17,  68 => 16,  57 => 7,  55 => 6,  51 => 5,  45 => 1,);
+        return array (  189 => 60,  186 => 56,  177 => 55,  160 => 34,  143 => 6,  125 => 5,  113 => 62,  111 => 55,  98 => 44,  88 => 35,  86 => 34,  57 => 7,  55 => 6,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -183,23 +214,54 @@ class __TwigTemplate_5421949974f119f5ff59fa95b696bd78d94e6b4adb89ffee26010d03124
         <meta charset=\"UTF-8\">
         <title>{% block title %}Bienvenido!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-        <link rel=\"stylesheet\" href=\"/css/cosmo/bootstrap.min.css\">
-        <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.2/css/all.css\" integrity=\"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr\" crossorigin=\"anonymous\">
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/r-2.2.2/datatables.min.css\"/>
-        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css\" />
-        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.print.css\" media='print'/>
-        <link rel=\"stylesheet\" href=\"/css/login.css\"/>
+        <!-- Custom fonts for this template-->
+        <link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">
+        <link href=\"https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i\" rel=\"stylesheet\">
+
+        <!-- Custom styles for this template-->
+        <link href=\"css/sb-admin-2.min.css\" rel=\"stylesheet\">
+
     </head>
-    <body>
+    <body class=\"bg-gradient-primary\">
         <div class=\"container\">
+            <!-- Outer Row -->
+            <div class=\"row justify-content-center\">
+
+                <div class=\"col-xl-10 col-lg-12 col-md-9\">
+
+                    <div class=\"card o-hidden border-0 shadow-lg my-5\">
+                        <div class=\"card-body p-0\">
+                            <!-- Nested Row within Card Body -->
+                            <div class=\"row\">
+                                <div class=\"col-lg-6 d-none d-lg-block bg-password-image\"></div>
+                                    <div class=\"col-lg-6\">
+                                        <div class=\"p-5\">
+                    
+        
+
+
+
             {% block body %}{% endblock %}
+                                        </div> <!-- p-5 -->
+                                    </div> <!-- col -->
+                            </div> <!-- Nested Row within Card Body -->
+                        </div>  <!-- Card body -->
+                    </div> <!-- Card -->
+                </div> <!-- Col -->
+            </div> <!-- Outer Row -->
         </div>
         {# {{ include('inc/footer.html.twig') }} #}
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
-        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js\" integrity=\"sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp\" crossorigin=\"anonymous\"></script>
-        <script type=\"text/javascript\" src=\"https://cdn.datatables.net/v/bs4/dt-1.10.18/b-1.5.4/b-html5-1.5.4/r-2.2.2/datatables.min.js\"></script>
-        <script src=\"/js/dt-table.js\"></script>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src=\"vendor/jquery/jquery.min.js\"></script>
+        <script src=\"vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src=\"vendor/jquery-easing/jquery.easing.min.js\"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src=\"js/sb-admin-2.min.js\"></script>
+
         {% block javascripts %}
             <script>
                 {# \$(document).ready(function(){
