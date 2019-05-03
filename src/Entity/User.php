@@ -33,6 +33,11 @@ class User implements UserInterface, \Serializable
     private $name;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $last_name;
+
+    /**
      * @ORM\Column(type="string", length=255 ,unique=true)
      */
     private $username;
@@ -64,6 +69,14 @@ class User implements UserInterface, \Serializable
 
     public function setName($name) {
        $this->name = $name;
+    }
+
+    public function getLastName() {
+        return $this->last_name;
+    }
+
+    public function setLastName($last_name) {
+       $this->last_name = $last_name;
     }
 
     public function getEmail() {
