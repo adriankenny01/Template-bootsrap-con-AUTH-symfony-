@@ -12,7 +12,13 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body id="page-top">
+        {{ include('inc/navbar.html.twig') }}
+
+        {{ include('inc/header.html.twig') }}
+
         {% block body %}{% endblock %}
+
+        {{ include('inc/footer.html.twig') }}
 
         {% block javascripts %}
 

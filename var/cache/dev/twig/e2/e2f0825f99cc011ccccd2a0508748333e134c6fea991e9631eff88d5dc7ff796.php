@@ -125,7 +125,7 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
                                                 </div>
                                                 <div class=\"form-group\">
                                                     <div class=\"custom-control custom-checkbox small\">
-                                                        <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck\">
+                                                        <input type=\"checkbox\" name=\"_remember_me\" class=\"custom-control-input\" id=\"customCheck\">
                                                         <label class=\"custom-control-label\" for=\"customCheck\">Remember Me</label>
                                                     </div>
                                                 </div>
@@ -221,7 +221,7 @@ class __TwigTemplate_13962cfa6134b79af9467cc4f748b928487b64d8e5c8ec0170ad7810a13
                                                 </div>
                                                 <div class=\"form-group\">
                                                     <div class=\"custom-control custom-checkbox small\">
-                                                        <input type=\"checkbox\" class=\"custom-control-input\" id=\"customCheck\">
+                                                        <input type=\"checkbox\" name=\"_remember_me\" class=\"custom-control-input\" id=\"customCheck\">
                                                         <label class=\"custom-control-label\" for=\"customCheck\">Remember Me</label>
                                                     </div>
                                                 </div>

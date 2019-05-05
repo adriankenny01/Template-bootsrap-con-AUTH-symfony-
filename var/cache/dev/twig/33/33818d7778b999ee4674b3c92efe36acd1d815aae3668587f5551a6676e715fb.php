@@ -64,13 +64,28 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
     <body id=\"page-top\">
         ";
         // line 15
-        $this->displayBlock('body', $context, $blocks);
-        // line 16
+        echo twig_include($this->env, $context, "inc/navbar.html.twig");
         echo "
+
         ";
         // line 17
+        echo twig_include($this->env, $context, "inc/header.html.twig");
+        echo "
+
+        ";
+        // line 19
+        $this->displayBlock('body', $context, $blocks);
+        // line 20
+        echo "
+        ";
+        // line 21
+        echo twig_include($this->env, $context, "inc/footer.html.twig");
+        echo "
+
+        ";
+        // line 23
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 37
+        // line 43
         echo "    </body>
 </html>
 ";
@@ -117,7 +132,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     }
 
-    // line 15
+    // line 19
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -134,7 +149,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
 
     }
 
-    // line 17
+    // line 23
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -143,7 +158,7 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 18
+        // line 24
         echo "
          <!-- Bootstrap core JavaScript-->
         <script src=\"vendor/jquery/jquery.min.js\"></script>
@@ -176,9 +191,14 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  147 => 18,  138 => 17,  121 => 15,  104 => 12,  86 => 5,  74 => 37,  72 => 17,  69 => 16,  67 => 15,  63 => 13,  61 => 12,  51 => 5,  45 => 1,);
+        return array (  162 => 24,  153 => 23,  136 => 19,  119 => 12,  101 => 5,  89 => 43,  87 => 23,  82 => 21,  79 => 20,  77 => 19,  72 => 17,  67 => 15,  63 => 13,  61 => 12,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -197,7 +217,13 @@ class __TwigTemplate_22c19e75c04705c3f16425041245ea6de829fbb5053c29e62b71fd67455
         {% block stylesheets %}{% endblock %}
     </head>
     <body id=\"page-top\">
+        {{ include('inc/navbar.html.twig') }}
+
+        {{ include('inc/header.html.twig') }}
+
         {% block body %}{% endblock %}
+
+        {{ include('inc/footer.html.twig') }}
 
         {% block javascripts %}
 
